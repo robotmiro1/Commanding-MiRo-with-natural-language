@@ -1,5 +1,4 @@
-﻿# Title of the project
-Commanding MiRo with natural language
+﻿# Commanding MiRo with natural language
 ## Objective of the Project
 MiRo starts listening for a key-phrase when the user does a gesture using
 the smartwatch. As it hears a key-phrase (e.g., “go close to the red ball and
