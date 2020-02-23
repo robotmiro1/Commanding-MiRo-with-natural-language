@@ -1,7 +1,17 @@
 ﻿# Title of the project
-
+Commanding MiRo with natural language
 ## Objective of the Project
-It describes what the project wants to achieve and defines terminologies. Presents the hardware or tools used in the project.
+MiRo starts listening for a key-phrase when the user does a gesture using
+the smartwatch. As it hears a key-phrase (e.g., “go close to the red ball and
+on the left of yellow box”), it converts speech to text and understands the
+key-phrase using CAGG. MiRo then recognizes the object of interest, it’s
+colour and the action that MiRo needs to take with respect to that object of
+interest.
+As MiRo executes an action, a web-interface allows the user to know (i.e.,
+get feedback) about whether (1) MiRo understood the command, (2) is
+executing the action, and (3) has completed the action or not. While doing
+its actions, MiRo localizes itself with respect to QR codes placed on the
+static objects of interest.
 
 ## Architecture of the System
 It presents the overall architecture of the system with the help of a UML and it describes in simple words the overall architecture, which is designed to meet the objective of the project.
