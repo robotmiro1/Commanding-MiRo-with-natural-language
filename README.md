@@ -13,6 +13,8 @@ its actions, MiRo localizes itself with respect to QR codes placed on the
 static objects of interest.
 
 ## Architecture of the System
+
+![alt text](https://github.com/robotmiro1/Commanding-MiRo-with-natural-language/blob/sloth_gesture/images/architecture.png)
 It presents the overall architecture of the system with the help of a UML and it describes in simple words the overall architecture, which is designed to meet the objective of the project.
 
 ## Description of the System’s Architecture
