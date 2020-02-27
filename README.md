@@ -49,7 +49,7 @@ Please keep in mind, **do not** include in your repository the “entire” code
 	
 ## Report
 
-This is the link to the report: < put the link here >
+This is the link to the report:  https://github.com/robotmiro1/Commanding-MiRo-with-natural-language/blob/sloth_gesture/Report%20-%20Commanding%20MiRo%20with%20natural%20language%20%5BProject%2012b%5D.docx 
 
 ## Authors
 * Amanzhol Raisov: cornytravel@gmail.com
