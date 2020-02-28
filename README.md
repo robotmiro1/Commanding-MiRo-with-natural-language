@@ -25,14 +25,6 @@ It describes details about the the modules within the architecture, i.e, **(i)**
 The Module <Gesture_Processor> was developed by Amanzhol Raisov.
 The node ‘Gesture processor’ subscribes to the information published by the node ‘IMU sensor’ and the sensor is inside the smartwatch which the user is wearing. This sensor is constantly publishing the IMU data on the topic. And the Gesture Processor node has subscribed to this topic. So, whatever information data has been published by the IMU sensor, it is received by the Gesture Processor. The Gesture processor then processes that information and tries to recognize, if a certain gesture has been performed or not. As soon as the gesture processor recognizes the required gesture, it publishes ‘1’ on the topic ‘ListenFlag’, else it publishes ‘0’. In our case, the required gesture is ‘up’.
 
-	.
-	.
-	
-### Module < name of the module >
-	.
-	.
-	.
-	
 ## Installation and System Testing
 ![alt text](https://github.com/robotmiro1/Commanding-MiRo-with-natural-language/blob/sloth_gesture/images/Screenshot%20from%202020-02-25%2017-18-31.png)
 This section presents (in its sub-sections) how to install/run and test the modules. **Note that:** If all the modules have successfully completed their work and integrated everything together, then this section can present the overall **Installation and Testing** procedure for the the "whole" system, instead of having a sub-section dedicated for each module. 
