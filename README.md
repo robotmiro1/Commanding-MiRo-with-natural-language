@@ -65,17 +65,37 @@ Install packages within a virtual environment without affecting the host system 
 	pip install --upgrade pip
 	
 Each tensorflow version works only with specific version of Keras. Install tensorflow 1.10 and keras 2.1.6.
-* To install tensorflow 1.10 use following command:
+To install tensorflow 1.10 use following command:
 
 	pip install tensorflow==1.10
 	
-* To install Keras 2.1.6. use following command:
+To install Keras 2.1.6. use following command:
 
 	pip install keras==2.1.6
 	
+Clone the directory from GitHub by using the following command:
 	
+	cd Downloads/
+        git status
+        git clone https://github.com/robotmiro1/Commanding-MiRo-with-natural-language.git
+
+Jump to the Module Directory:
 	
+	cd catkin_ws/src/Gesture_Processor/src/
 	
+Open a new terminal and run the ROS Master:
+	
+	roscore
+	
+Run the Python Node:
+	
+	python gesture_recogniton.py
+	
+Visualize Published Messages:
+	
+	Rostopic echo ListenFlag
+	
+After building the correspong package, It has been possible to test its results:
 	
 	
 	
