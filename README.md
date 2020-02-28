@@ -35,14 +35,14 @@ Before starting using Ubuntu 16.04 , make sure, that the Base Memory of the syst
 
 Smartwatch is connected to the ROS master through the Wi-Fi (EmaroLab-WiFi). Find the IP address of your ROS master that is on the computer using this command:
 
-	ifconfig
+	$ ifconfig
 Now, connect your Smartwatch with the ROS master by inserting the IP address of ROS master, inside the Smartwatch
 Install the Python development environment on your system
 Check if your Python environment is already configured:
 
-	python --version	
-	pip --version
-	virtualenv --version
+	$ python --version	
+	$ pip --version
+	$ virtualenv --version
 	
 On Ubuntu:	
 
