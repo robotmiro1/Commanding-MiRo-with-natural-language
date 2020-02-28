@@ -22,7 +22,7 @@ This section presents in a detailed manner (in its sub-sections) each module wit
 It describes details about the the modules within the architecture, i.e, **(i)** names of the key people who developed the module, **(ii)** mention the files (packages/nodes) found in the repository that are associated to the module, **(iii)** the prerequisites (e.g., all the hardware and software required) for the module, **(iv)** the inputs to the module, **(v)** the internal working of the module, and **(vi)** the outputs of the module.
 
 ### Module < Gesture_Processor >
-	.The Module <Gesture_Processor> was developed by Amanzhol Raisov.
+The Module <Gesture_Processor> was developed by Amanzhol Raisov.
 The node ‘Gesture processor’ subscribes to the information published by the node ‘IMU sensor’ and the sensor is inside the smartwatch which the user is wearing. This sensor is constantly publishing the IMU data on the topic. And the Gesture Processor node has subscribed to this topic. So, whatever information data has been published by the IMU sensor, it is received by the Gesture Processor. The Gesture processor then processes that information and tries to recognize, if a certain gesture has been performed or not. As soon as the gesture processor recognizes the required gesture, it publishes ‘1’ on the topic ‘ListenFlag’, else it publishes ‘0’. In our case, the required gesture is ‘up’.
 
 	.
