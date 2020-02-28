@@ -46,54 +46,54 @@ Check if your Python environment is already configured:
 	
 On Ubuntu:	
 
-	sudo apt update
-	sudo apt install python-dev python-pip
-	sudo pip install -U virtualenv  # system-wide install
+	$ sudo apt update
+	$ sudo apt install python-dev python-pip
+	$ sudo pip install -U virtualenv  # system-wide install
 	
 Python virtual environments are used to isolate package installation from the system.
 Create a new virtual environment by choosing a Python interpreter and making a ./venv directory to hold it:
 
-	virtualenv --system-site-packages -p python2.7 ./venv
+	$ virtualenv --system-site-packages -p python2.7 ./venv
 
 Activate the virtual environment using a shell-specific command:
 	
-	source ./venv/bin/activate
+	$ source ./venv/bin/activate
 	
 When virtualenv is active, your shell prompt is prefixed with (venv).
 Install packages within a virtual environment without affecting the host system setup. Start by upgrading pip:
 
-	pip install --upgrade pip
+	$ pip install --upgrade pip
 	
 Each tensorflow version works only with specific version of Keras. Install tensorflow 1.10 and keras 2.1.6.
 To install tensorflow 1.10 use following command:
 
-	pip install tensorflow==1.10
+	$ pip install tensorflow==1.10
 	
 To install Keras 2.1.6. use following command:
 
-	pip install keras==2.1.6
+	$ pip install keras==2.1.6
 	
 Clone the directory from GitHub by using the following command:
 	
-	cd Downloads/
-        git status
-        git clone https://github.com/robotmiro1/Commanding-MiRo-with-natural-language.git
+	$ cd Downloads/
+        $ git status
+        $ git clone https://github.com/robotmiro1/Commanding-MiRo-with-natural-language.git
 
 Jump to the Module Directory:
 	
-	cd catkin_ws/src/Gesture_Processor/src/
+	$ cd catkin_ws/src/Gesture_Processor/src/
 	
 Open a new terminal and run the ROS Master:
 	
-	roscore
+	$ roscore
 	
 Run the Python Node:
 	
-	python gesture_recogniton.py
+	$ python gesture_recogniton.py
 	
 Visualize Published Messages:
 	
-	Rostopic echo ListenFlag
+	$ rostopic echo ListenFlag
 	
 After building the correspong package, It has been possible to test its results:
 	
