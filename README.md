@@ -101,7 +101,7 @@ After building the correspong package, It has been possible to test its results:
 	
 ## Report
 
-This is the link to the report: [Project Report](https://github.com/robotmiro1/Commanding-MiRo-with-natural-language/blob/sloth_gesture/Report%20-%20Commanding%20MiRo%20with%20natural%20language%20%5BProject%2012b%5D.docx)
+This is the link to the report: [Project Report](https://drive.google.com/drive/folders/14ZqmOKUoB4UWgbQK_B_d29BqfuJewlg_)
 
 ## Authors
 * Amanzhol Raisov: cornytravel@gmail.com
