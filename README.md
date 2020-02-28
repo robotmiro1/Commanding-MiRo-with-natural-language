@@ -100,6 +100,7 @@ To see rqt graph of the working system :
 			   
 After building the correspong package, It has been possible to test its results:
 	
+It is important to note, that our data package in Gesture_Processor will only work with a specific Smart Watch model.
 
 	
 ## Report
