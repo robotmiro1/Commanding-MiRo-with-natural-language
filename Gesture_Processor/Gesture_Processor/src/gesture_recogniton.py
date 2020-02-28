@@ -23,14 +23,14 @@ gesture_instance[:] = np.nan
 
 global last 
 last = 0
-#Processing the received data from the subscribed Imu messages.
+#! Processing the received data from the subscribed Imu messages.
 def imu_callback(data):
     global last
     global data_stream
     global gesture_instance
 
     if long(data.header.frame_id) - last > 90:
-        #print data.header.frame_id
+        #! print data.header.frame_id
         gesture_instance = np.roll(gesture_instance,99,1)
         gesture_instance[:,-1,:] = np.nan
         data_stream = np.roll(data_stream,99,1)
@@ -42,7 +42,7 @@ def imu_callback(data):
         S.window_update(data.linear_acceleration.x, data.linear_acceleration.y, data.linear_acceleration.z)
         S.classify()
         S.detect()
-#Mapping the gesture ID's to more understandable gesture names, so that, the published messages can contain the exact gesture name that is performed by the user.
+#! Mapping the gesture ID's to more understandable gesture names, so that, the published messages can contain the exact gesture name that is performed by the user.
 
 def convert_id_to_string(gesture_id):        
     gesture_str = ' '                 
@@ -76,9 +76,9 @@ def main():
     global gesture_instance
 
     rospy.init_node('sloth', anonymous=True)
-    rospy.Subscriber('/G_Watch_R_5567/imu_data', Imu, imu_callback, queue_size=1)  #Subscribing to the data published on the topic '/G_Watch_R_5567/imu_data' by the Imu node and sending the data to imu_callback function for processing.  (impotant line!)
+    rospy.Subscriber('/G_Watch_R_5567/imu_data', Imu, imu_callback, queue_size=1)  #! Subscribing to the data published on the topic 'G_Watch_R_5567/imu_data' by the Imu node and sending the data to imu_callback function for processing.  (impotant line!)
     pub = []     
-    string_pub = rospy.Publisher('ListenFlag', String, queue_size=2)  #Creating a publisher to publish the recognized gesture on topic 'ListenFlag'
+    string_pub = rospy.Publisher('ListenFlag', String, queue_size=2)  #! Creating a publisher to publish the recognized gesture on topic 'ListenFlag'
     r = rospy.Rate(10)
     
  
@@ -102,20 +102,20 @@ def main():
     while not rospy.is_shutdown():
         #S.display()
         gesture = S.get_gesures()
-	#print(gesture)                                        #this line you should remove to clear numbers in output 
+	#print(gesture)                                       #! this line you should remove to clear numbers in output 
         gesture_str_list = []                                  
         for ges in gesture:
             gesture_instance[:,-1,:] = data_stream[:,-1,:]
             gest_id = int(ges)                                 
             gest_str = convert_id_to_string(gest_id) 
 	    if gest_str == "up":
-            	string_pub.publish('1')                 #After naming the recognized gesture using the function 'gest_str = convert_id_to_string(gest_id)', publishing the gesture name on the publisher topic 'gesture'
+            	string_pub.publish('1')                 #! After naming the recognized gesture using the function 'gest_str = convert_id_to_string(gest_id)', publishing the gesture name on the publisher topic 'gesture'
             else:
 		string_pub.publish('0')
             gesture_str_list.append(gest_str)  #edit
             img=mpimg.imread(images_path + "/" + str(ges) + ".jpg")
             ax1.imshow(img)
-        #the following codes is used to visualize the subscribed data.
+        #! the following codes is used to visualize the subscribed data.
         print(gesture_str_list)                                
         ax2.clear()
         ax3.clear()
