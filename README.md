@@ -26,15 +26,58 @@ The Module <Gesture_Processor> was developed by Amanzhol Raisov.
 The node ‘Gesture processor’ subscribes to the information published by the node ‘IMU sensor’ and the sensor is inside the smartwatch which the user is wearing. This sensor is constantly publishing the IMU data on the topic. And the Gesture Processor node has subscribed to this topic. So, whatever information data has been published by the IMU sensor, it is received by the Gesture Processor. The Gesture processor then processes that information and tries to recognize, if a certain gesture has been performed or not. As soon as the gesture processor recognizes the required gesture, it publishes ‘1’ on the topic ‘ListenFlag’, else it publishes ‘0’. In our case, the required gesture is ‘up’.
 
 ## Installation and System Testing
+
+### Module < Gesture_Processor >
 ![alt text](https://github.com/robotmiro1/Commanding-MiRo-with-natural-language/blob/sloth_gesture/images/Screenshot%20from%202020-02-25%2017-18-31.png)
-This section presents (in its sub-sections) how to install/run and test the modules. **Note that:** If all the modules have successfully completed their work and integrated everything together, then this section can present the overall **Installation and Testing** procedure for the the "whole" system, instead of having a sub-section dedicated for each module. 
+                             Figure 1: rqt graph for the Gesture Processor
 
-Please keep in mind, **do not** include in your repository the “entire” code of the external libraries that your module may use. Hence accordingly, **describe** to the new users how they can “install” the external libraries and then **describe** how they can “install” your module that uses those libraries. Afterwhich, **describe** how to run and test your module. Finally, show **(i)** the rqt_graph generated when the module is running, **(ii)** images or links to the videos showing the working of the module (in real or in simulation).
+Before starting using Ubuntu 16.04 , make sure, that the Base Memory of the system (see on Virtual Box) has enough space so that in the future the system works correctly without failures.
 
-### Module < name of the module >
-	.
-	.
-	.
+Smartwatch is connected to the ROS master through the Wi-Fi (EmaroLab-WiFi). Find the IP address of your ROS master that is on the computer using this command:
+
+	Ifconfig
+Now, connect your Smartwatch with the ROS master by inserting the IP address of ROS master, inside the Smartwatch
+Install the Python development environment on your system
+Check if your Python environment is already configured:
+
+	python --version	
+	pip --version
+	virtualenv --version
+	
+On Ubuntu:	
+
+	sudo apt update
+	sudo apt install python-dev python-pip
+	sudo pip install -U virtualenv  # system-wide install
+	
+Python virtual environments are used to isolate package installation from the system.
+Create a new virtual environment by choosing a Python interpreter and making a ./venv directory to hold it:
+
+	virtualenv --system-site-packages -p python2.7 ./venv
+
+Activate the virtual environment using a shell-specific command:
+	
+	source ./venv/bin/activate
+	
+When virtualenv is active, your shell prompt is prefixed with (venv).
+Install packages within a virtual environment without affecting the host system setup. Start by upgrading pip:
+
+	pip install --upgrade pip
+	
+Each tensorflow version works only with specific version of Keras. Install tensorflow 1.10 and keras 2.1.6.
+To install tensorflow 1.10 use following command:
+
+	pip install tensorflow==1.10
+	
+To install Keras 2.1.6. use following command:
+
+	pip install keras==2.1.6
+	
+	
+	
+	
+	
+	
 	
 ### Module < name of the module >
 	.
