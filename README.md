@@ -18,8 +18,6 @@ static objects of interest.
 It presents the overall architecture of the system with the help of a UML and it describes in simple words the overall architecture, which is designed to meet the objective of the project.
 
 ## Description of the System’s Architecture
-This section presents in a detailed manner (in its sub-sections) each module within the architecture.
-It describes details about the the modules within the architecture, i.e, **(i)** names of the key people who developed the module, **(ii)** mention the files (packages/nodes) found in the repository that are associated to the module, **(iii)** the prerequisites (e.g., all the hardware and software required) for the module, **(iv)** the inputs to the module, **(v)** the internal working of the module, and **(vi)** the outputs of the module.
 
 ### Module < Gesture_Processor >
 The Module <Gesture_Processor> was developed by Amanzhol Raisov.
@@ -28,8 +26,6 @@ The node ‘Gesture processor’ subscribes to the information published by the 
 ## Installation and System Testing
 
 ### Module < Gesture_Processor >
-![alt text](https://github.com/robotmiro1/Commanding-MiRo-with-natural-language/blob/sloth_gesture/images/Screenshot%20from%202020-02-25%2017-18-31.png)
-                             Figure 1: rqt graph for the Gesture Processor
 
 Before starting using Ubuntu 16.04 , make sure, that the Base Memory of the system (see on Virtual Box) has enough space so that in the future the system works correctly without failures.
 
@@ -95,6 +91,13 @@ Visualize Published Messages:
 	
 	$ rostopic echo ListenFlag
 	
+To see rqt graph of the working system :
+
+	$ rqt_graph
+	
+![alt text](https://github.com/robotmiro1/Commanding-MiRo-with-natural-language/blob/sloth_gesture/images/Screenshot%20from%202020-02-25%2017-18-31.png)
+                           Figure 1: rqt graph for the Gesture Processor
+			   
 After building the correspong package, It has been possible to test its results:
 	
 
