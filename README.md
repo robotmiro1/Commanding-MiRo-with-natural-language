@@ -97,12 +97,7 @@ Visualize Published Messages:
 	
 After building the correspong package, It has been possible to test its results:
 	
-	
-	
-### Module < name of the module >
-	.
-	.
-	.
+
 	
 ## Report
 
@@ -111,37 +106,3 @@ This is the link to the report: [Project Report](https://github.com/robotmiro1/C
 ## Authors
 * Amanzhol Raisov: cornytravel@gmail.com
 
-# Useful GitHub readme syntax
-
-## To make hyper-link
-
-For example, making a link to [ROS tutorials](http://wiki.ros.org/ROS/Tutorials)
-
-## To show, how to execute some commands in the terminal
-
-    ```
-    sudo apt install ros-kinetic-opencv3 #(should be already installed with previous point)
-    sudo apt install ros-kinetic-opencv-apps
-    ```
-
-## To exphasize about a particular command
-
-For example: Please do a ```catkin_make```, once you have modified your code. 
-
-## To add image(s) or video(s)
-
-* To embbed an image
-
-<p align="center"> 
-<img src="https://github.com/yushakareem/test-delete/blob/master/light-bulb-2-256.gif">
-</p>
-
-Click the source for demostration video. [video](https://youtu.be/3E2BOBpMcWM)
-
-## References
-
-[Concept guide.](https://guides.github.com/features/wikis/)
-
-[Syntax guide.](https://help.github.com/en/articles/basic-writing-and-formatting-syntax)
-
-[Link to the repository that has this readme.](https://github.com/EmaroLab/GitHub_Readme_Template)
