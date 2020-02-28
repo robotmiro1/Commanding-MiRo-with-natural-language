@@ -65,11 +65,11 @@ Install packages within a virtual environment without affecting the host system 
 	pip install --upgrade pip
 	
 Each tensorflow version works only with specific version of Keras. Install tensorflow 1.10 and keras 2.1.6.
-To install tensorflow 1.10 use following command:
+* To install tensorflow 1.10 use following command:
 
 	pip install tensorflow==1.10
 	
-To install Keras 2.1.6. use following command:
+* To install Keras 2.1.6. use following command:
 
 	pip install keras==2.1.6
 	
